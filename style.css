@@ -370,6 +370,7 @@ display: flex; align-items: center; justify-content: space-between; padding: 0.7
   transform: rotate(-4deg);
   animation: fadeSlideInRight 0.9s ease-out forwards, heroFloat 5s ease-in-out infinite 2.4s;
   animation-delay: 0.85s, 2.4s;
+   z-index: 1;
 }
 
 .floating-image .image-wrapper {
