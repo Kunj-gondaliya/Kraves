@@ -213,7 +213,7 @@ display: flex; align-items: center; justify-content: space-between; padding: 0.7
 
 .navbar-visit:hover {
   opacity: 0.9;
- text -decoration:underline;
+
 }
 
 .navbar-visit:active {
@@ -2178,6 +2178,44 @@ display: flex; align-items: center; justify-content: space-between; padding: 0.7
     min-height: 320px;
   }
 }
+/* ============================================
+   MOBILE NAVBAR FIX
+   ============================================ */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    padding: 0.85rem 1rem;
+  }
+
+  /* Hide desktop nav */
+  .navbar-links,
+  .navbar-ctas {
+    display: none;
+  }
+
+  /* Show hamburger */
+  .mobile-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Smaller logo */
+  .navbar-logo {
+    font-size: 1.3rem;
+  }
+
+  /* Mobile menu */
+  .mobile-menu.active {
+    display: block;
+  }
+
+  .mobile-menu {
+    top: 85px;
+  }
+}
+
 
 /* Animation delay utilities */
 .delay-100 { transition-delay: 0.1s; }
