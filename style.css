@@ -2215,7 +2215,46 @@ display: flex; align-items: center; justify-content: space-between; padding: 0.7
     top: 85px;
   }
 }
+/* FINAL NAVBAR FIX */
 
+/* Desktop */
+@media (min-width: 769px) {
+
+  .mobile-toggle {
+    display: none !important;
+  }
+
+  .navbar-links {
+    display: flex !important;
+  }
+
+  .navbar-ctas {
+    display: flex !important;
+  }
+
+  .mobile-menu {
+    display: none !important;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .navbar-links,
+  .navbar-ctas {
+    display: none !important;
+  }
+
+  .mobile-toggle {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mobile-menu.active {
+    display: block !important;
+  }
+}
 
 /* Animation delay utilities */
 .delay-100 { transition-delay: 0.1s; }
